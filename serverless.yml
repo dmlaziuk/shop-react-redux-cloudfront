@@ -1,6 +1,8 @@
+org: foreman
+app: node-in-aws-web
 service: node-in-aws-web
 
-frameworkVersion: '2'
+frameworkVersion: '3'
 
 provider:
   name: aws
@@ -17,7 +19,7 @@ plugins:
 
 custom:
   client:
-    bucketName: node-in-aws-web-bucket
+    bucketName: foreman-node-in-aws-web-bucket
     distributionFolder: build
   s3BucketName: ${self:custom.client.bucketName}
 
